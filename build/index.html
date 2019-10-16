@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+    <!--start header-->
+    <div class="header container">
+        <div class="header__wrap">
+            <div class="header__toggle">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="header__nav">
+                <a href="#personal" class="header__nav_item scroll-to">Личная информация</a>
+                <a href="#experience" class="header__nav_item scroll-to">Опыт</a>
+                <a href="#javascript" class="header__nav_item scroll-to">JavaScript</a>
+                <a href="#about" class="header__nav_item scroll-to">О себе</a>
+            </div>
+        </div>
+    </div>
+    <!--end header-->
+
+</body>
+</html>
+
+<div class="main">
+
+    <!--start bnr-page-->
+    <div class="bnr-page">
+        <div class="container bnr-page__title">Анкета</div>
+    </div>
+    <!--end bnr-page-->
+
+    <!--start profile-->
+    <div class="profile container">
+        <form action="" class="profile-form form">
+            <!--start info-personal-->
+            <div id="personal"></div>
+            <div class="profile-form__info-personal form__block">
+                <div class="form__icon"><img src="img/icon-form/icon-personal.svg" alt=""></div>
+                <div class="form__title">Личная информация</div>
+                <div class="form__input input">
+                    <div class="input__placeholder input__placeholder--active">ФИО</div>
+                    <input type="text" value="Слатвинский Иван Сергеевич">
+                </div>
+
+                <!--start select-->
+                <div class="form__select select">
+                    <div class="select__title">
+                        <div class="select__title_value select__title_value--active">1992</div>
+                        <div class="select__title_arrow"><div></div></div>
+                    </div>
+                    <div class="select__drop" data-year-min="1980" data-year-max="2019">
+                        <div class="select__drop_scroll"></div>
+                    </div>
+                </div>
+                <!--end select-->
+
+                <div class="form__input input">
+                    <div class="input__placeholder input__placeholder--active">Место проживания</div>
+                    <input type="text" value="Беларусь, Минск">
+                </div>
+                <div class="form__input input">
+                    <div class="input__placeholder input__placeholder--active">Skype</div>
+                    <input type="text" value="vanya010792">
+                </div>
+                <div class="form__input input">
+                    <div class="input__placeholder input__placeholder--active">E-mail</div>
+                    <input type="text" value="vanya010792@gmail.com">
+                </div>
+            </div>
+            <!--end info-personal-->
+
+            <!--start info-experience-->
+            <div id="experience"></div>
+            <div class="profile-form__info-experience form__block">
+                <div class="form__icon"><img src="img/icon-form/icon-experience.svg" alt=""></div>
+                <div class="form__title">Расскажите о своем опыте</div>
+
+                <!--start checkbox list-->
+                <div class="wrap">
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <span class="checkbox__item">БЭМ/OOCSS</span>
+                        </label>
+                    </div>
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <span class="checkbox__item">Верстаю семантично</span>
+                        </label>
+                    </div>
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox">
+                            <span class="checkbox__item">Webpack</span>
+                        </label>
+                    </div>
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <span class="checkbox__item">Stylus/LESS/SASS</span>
+                        </label>
+                    </div>
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <span class="checkbox__item">ES2015/ES2016</span>
+                        </label>
+                    </div>
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <span class="checkbox__item">jQuery</span>
+                        </label>
+                    </div>
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <span class="checkbox__item">Работаю с SVG</span>
+                        </label>
+                    </div>
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <span class="checkbox__item">Gulp/GRUNT</span>
+                        </label>
+                    </div>
+                    <div class="wrap__item">
+                        <label class="form__checkbox checkbox">
+                            <input class="checkbox__input" type="checkbox" checked>
+                            <span class="checkbox__item">Использую Git</span>
+                        </label>
+                    </div>
+                </div>
+                <!--end checkbox list-->
+
+            </div>
+            <!--end info-experience-->
+
+            <!--start info-javascript-->
+            <div id="javascript"></div>
+            <div class="profile-form__info-javascript form__block">
+                <div class="form__icon"><img src="img/icon-form/icon-javascript.svg" alt=""></div>
+                <div class="form__title">Уровень владения JavaScript</div>
+                <div class="range">
+                    <div class="range__desc">
+                        <div class="range__desc_item">
+                            Не владею
+                        </div>
+                        <div class="range__desc_item">
+                            Использую готовые<br>решения
+                        </div>
+                        <div class="range__desc_item">
+                            Использую готовые решения
+                            и умею и переделывать
+                        </div>
+                        <div class="range__desc_item">
+                            Пишу сложный JS с нуля
+                        </div>
+                    </div>
+                    <div class="range__progress">
+                        <div class="range__progress_value"></div>
+                        <div class="range__progress_empty" style="left: 60%"></div>
+                    </div>
+                    <div class="range__cursor noselect" style="left: 60%"><img class="noselect" src="img/icon-form/range-button.svg" alt=""></div>
+                </div>
+            </div>
+            <!--end info-javascript-->
+
+            <!--start info-about-->
+            <div id="about"></div>
+            <div class="profile-form__info-about form__block">
+                <div class="form__icon"><img src="img/icon-form/icon-about.svg" alt=""></div>
+                <div class="form__title">Расскажите о себе</div>
+                <div class="form__subtitle">Напишите несколько предложений, чем привлекла наша вакансия и что вы ожидаете от работы у нас.</div>
+                <div class="form__textarea">
+                    <textarea class="textarea" cols="" rows="" placeholder="Понравилась тем, что...">О себе могу сказать - я трудолюбивый, честный, жизнерадостный, адекватный, любящий свою семью и иногда поигрывающий в покер. Вакансия заинтересовала - удаленка, процентов на 90 уверен, что у вас есть проф рост (судя по макету, мне такие нравятся) и зарплата.
+                    </textarea>
+                </div>
+                <div class="form__btn">
+                    <button type="submit" class="btn">Готово</button>
+                </div>
+            </div>
+            <!--end ingo-about-->
+        </form>
+    </div>
+    <!--end profile-->
+
+</div>

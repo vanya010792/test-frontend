@@ -1,0 +1,225 @@
+@media screen and ( max-width: 768px ) {
+  .header {
+    padding: 0;
+    &__toggle {
+      display: flex;
+    }
+    &__nav {
+      display: none;
+      position: fixed;
+      z-index: 19;
+      top: 0;
+      left: 0;
+      padding: 70px 10px 20px 10px;
+      background-color: #ffffff;
+      box-shadow: -1px 0 4px 0 @C-text-gray;
+      &_item {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        padding: 10px 0;
+        font-family: @FF-Roboto;
+        font-size: 14px;
+        font-weight: @FW-Light;
+        color: @C-blue;
+        text-decoration: none;
+        transition: color .3s;
+        &:first-child {
+          margin-left: 0;
+        }
+        &:hover {
+          color: @C-text-dark;
+        }
+      }
+    }
+  }
+  .bnr-page {
+    margin-bottom: 40px;
+    &__title {
+      font-size: 54px;
+    }
+  }
+  .profile-form {
+    &__info-experience {
+      margin-bottom: 80px;
+      & .wrap {
+        margin-bottom: -10px;
+        &__item {
+          flex-basis: 50%;
+          width: 45%;
+          padding-right: 5px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    &__info-javascript {
+      margin-bottom: 70px;
+    }
+  }
+  .form {
+    &__block {
+      margin-bottom: 50px;
+    }
+    &__icon {
+      margin-bottom: 14px;
+      & img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+    &__title {
+      font-size: 20px;
+      margin-bottom: 30px;
+      & + .form__subtitle {
+        margin-top: -20px;
+      }
+    }
+    &__subtitle {
+      font-size: 14px;
+      margin-bottom: 25px;
+    }
+    &__textarea {
+      height: 140px;
+      margin-bottom: 50px;
+    }
+  }
+  .input {
+    margin-bottom: 15px;
+    &__placeholder {
+      top: 15px;
+      right: 0;
+      font-size: 16px;
+      &--active {
+        top: 6px;
+        font-size: 12px;
+      }
+    }
+    & input {
+      padding: 18px 6px 6px 6px;
+      font-size: 16px;
+    }
+  }
+  .select {
+    margin-bottom: 15px;
+    &__title {
+      padding: 10px 30px 13px 30px;
+      &_value {
+        font-size: 20px;
+      }
+      &_arrow {
+        & div {
+          position: absolute;
+          left: 0;
+          top: 17px;
+        }
+      }
+    }
+    &__drop {
+      height: 200px;
+      padding: 20px 3px;
+      &_scroll {
+        &::-webkit-scrollbar {
+          width: 3px;
+        }
+        &::-webkit-scrollbar-thumb {
+          width: 3px;
+          height: 90px;
+
+        }
+      }
+      &_item {
+        font-size: 16px;
+        margin-bottom: 8px;
+      }
+    }
+  }
+  .checkbox {
+    &__item {
+      padding-left: 26px;
+      font-size: 14px;
+      &::before {
+        width: 15px;
+        height: 15px;
+      }
+      &::after {
+        left: 6px;
+        width: 4px;
+        height: 6px;
+      }
+    }
+  }
+  .range {
+    &__desc {
+      &_item {
+        font-size: 11px;
+      }
+    }
+    &__progress {
+      position: relative;
+      overflow: hidden;
+      height: 14px;
+      background-color: transparent;
+      &_value {
+        background-image: linear-gradient( 0deg, rgb(204,177,241) 0%, rgb(67,89,147) 100%);
+        background-image: -moz-linear-gradient( 0deg, rgb(204,177,241) 0%, rgb(67,89,147) 100%);
+        background-image: -webkit-linear-gradient( 0deg, rgb(204,177,241) 0%, rgb(67,89,147) 100%);
+        background-image: -ms-linear-gradient( 0deg, rgb(204,177,241) 0%, rgb(67,89,147) 100%);
+        background-image: -o-linear-gradient( 0deg, rgb(204,177,241) 0%, rgb(67,89,147) 100%);
+        height: 14px;
+      }
+      &_empty {
+        position: absolute;
+        left: 100%;
+        bottom: 0;
+        top: 0;
+        background-color: #e8e8e8;
+        height: 100%;
+        width: 100%;
+        transition: left .3s;
+      }
+      &::before {
+        content: '';
+        width: 100%;
+        height: 16px;
+        background-color: #ffffff;
+        transform: rotate(-.9deg);
+        position: absolute;
+        top: -10px;
+        left: 0;
+        right: 0;
+        z-index: 4;
+      }
+    }
+    &__cursor {
+      position: absolute;
+      top: 100%;
+      padding-top: 4px;
+      width: 16px;
+      height: 23px;
+      cursor: pointer;
+      margin-left: -8px;
+      transition: left .3s;
+      & img {
+        width: 16px;
+        height: 23px;
+      }
+    }
+  }
+  .textarea {
+    padding: 14px 15px;
+    font-size: 16px;
+    &::-webkit-input-placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder,
+    &:-moz-placeholder,
+    &::-moz-placeholder,
+    &::placeholder {
+      font-size: 16px;
+    }
+  }
+  .btn {
+    font-size: 14px;
+    padding: 12px 24px;
+  }
+}
